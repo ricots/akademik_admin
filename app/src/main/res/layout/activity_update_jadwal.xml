@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/tool_bar"
+            android:id="@+id/toolbar"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nama_matkul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nama matkul" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/semester_kuliah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="semseter" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/hari_matkul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hari" />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ruang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ruang" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/update_jam_mulai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="jam mulai" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/update_jam_selesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="jam selesai" />
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/prodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="prodi" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:textSize="24dp"
+                android:text="pilih dosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <Spinner
+                android:id="@+id/spin_dosen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/nidnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/idprodinya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button android:id="@+id/update_dosen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="update data"
+                android:background="@color/PrimaryColor"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

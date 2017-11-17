@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/tool_bar"
+            android:id="@+id/toolbar"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_matkul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="masukkan nama matkul" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:textSize="24dp"
+                android:text="pilih semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spin_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+
+            <Button android:id="@+id/simpan_matkul"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="simpan data"
+                android:background="@color/PrimaryColor"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
