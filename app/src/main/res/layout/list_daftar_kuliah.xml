@@ -20,6 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/id_nid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/id_matkul"
@@ -32,11 +37,7 @@
                 android:layout_height="wrap_content">
 
                 <TableRow>
-                    <TextView
-                        android:visibility="gone"
-                        android:id="@+id/id_nid"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+
                     <TextView
                         android:text="mata kuliah"
                         android:paddingRight="10dp"

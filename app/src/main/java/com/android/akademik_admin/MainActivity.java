@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.android.akademik_admin.activity.login;
+import com.android.akademik_admin.fragment.absen;
 import com.android.akademik_admin.fragment.add_dosen;
 import com.android.akademik_admin.fragment.home;
 import com.android.akademik_admin.fragment.matkul;
@@ -87,6 +88,13 @@ public class MainActivity extends AppCompatActivity {
                         android.support.v4.app.FragmentTransaction fragmentTransaction_dosen = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction_dosen.replace(R.id.frame,fragment_dosen);
                         fragmentTransaction_dosen.commit();
+                        return true;
+
+                    case R.id.absen:
+                        absen fragment_absen = new absen();
+                        android.support.v4.app.FragmentTransaction fragmentTransaction_absen = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction_absen.replace(R.id.frame,fragment_absen);
+                        fragmentTransaction_absen.commit();
                         return true;
 
                     case R.id.spam:

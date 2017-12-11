@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/spin_nid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/spin_nid"
+        android:id="@+id/list_absen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:textColor="#e91616"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/cek_data"
+        android:text="tidak ada data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

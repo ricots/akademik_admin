@@ -5,7 +5,23 @@ package com.android.akademik_admin.oop;
  */
 
 public class Item {
-    String id_matkul, semester, nama_matkul,hari, jam_mulai,jam_selesai, ruang, nid,id_prodi,dosen;
+    String id_matkul, semester, nama_matkul,hari, jam_mulai,jam_selesai, ruang, nid,id_prodi,dosen,keterangan,tanggal;
+
+    public String getKeterangan() {
+        return keterangan;
+    }
+
+    public void setKeterangan(String keterangan) {
+        this.keterangan = keterangan;
+    }
+
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
+    }
 
     public String getDosen() {
         return dosen;

@@ -16,6 +16,12 @@
             android:title="data dosen" />
 
         <item
+            android:id="@+id/absen"
+            android:checked="false"
+            android:icon="@drawable/absen"
+            android:title="data absen" />
+
+        <item
             android:id="@+id/spam"
             android:checked="false"
             android:icon="@drawable/ic_error_black"

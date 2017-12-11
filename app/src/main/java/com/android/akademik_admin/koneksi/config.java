@@ -13,7 +13,8 @@ public class config {
     public static final String SPINER = "http://mydeveloper.id/akademik/admin/spiner.php";
     public static final String SIMPAN_DOSEN = "http://mydeveloper.id/akademik/admin/simpan_dosen.php";
     public static final String SIMPAN_MATKUL = "http://mydeveloper.id/akademik/admin/simpan_matkul.php";
-    public static final String FORGET = "http://mydeveloper.id/labkomp/forget.php";
+    public static final String NID_ABSEN = "http://mydeveloper.id/akademik/admin/list_nid_absen.php";
+    public static final String NID_CARI = "http://mydeveloper.id/akademik/admin/list_absen.php?nid=";
 
     public static final String KEY_TOKEN = "token";
     public static final String KEY_NPM = "npm";
