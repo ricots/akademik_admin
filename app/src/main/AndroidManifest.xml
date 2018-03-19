@@ -25,7 +25,9 @@
         <activity android:name=".fragment.add_dosen" />
         <activity android:name=".activity.add_matkul" />
         <activity android:name=".fragment.home" />
-        <activity android:name=".fragment.absen"></activity>
+        <activity android:name=".fragment.absen" />
+        <activity android:name=".fragment.ujian" />
+        <activity android:name=".activity.daftar_ujian"></activity>
     </application>
 
 </manifest>

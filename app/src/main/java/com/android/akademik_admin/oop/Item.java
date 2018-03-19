@@ -5,7 +5,32 @@ package com.android.akademik_admin.oop;
  */
 
 public class Item {
-    String id_matkul, semester, nama_matkul,hari, jam_mulai,jam_selesai, ruang, nid,id_prodi,dosen,keterangan,tanggal;
+    String id_matkul, semester, nama_matkul,hari, jam_mulai,jam_selesai, ruang, nid,id_prodi,dosen,
+            keterangan,tanggal,id_ujian, jenis_ujian,tahun_ajaran;
+
+    public String getId_ujian() {
+        return id_ujian;
+    }
+
+    public void setId_ujian(String id_ujian) {
+        this.id_ujian = id_ujian;
+    }
+
+    public String getJenis_ujian() {
+        return jenis_ujian;
+    }
+
+    public void setJenis_ujian(String jenis_ujian) {
+        this.jenis_ujian = jenis_ujian;
+    }
+
+    public String getTahun_ajaran() {
+        return tahun_ajaran;
+    }
+
+    public void setTahun_ajaran(String tahun_ajaran) {
+        this.tahun_ajaran = tahun_ajaran;
+    }
 
     public String getKeterangan() {
         return keterangan;

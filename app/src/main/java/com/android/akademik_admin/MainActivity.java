@@ -21,6 +21,7 @@ import com.android.akademik_admin.fragment.absen;
 import com.android.akademik_admin.fragment.add_dosen;
 import com.android.akademik_admin.fragment.home;
 import com.android.akademik_admin.fragment.matkul;
+import com.android.akademik_admin.fragment.ujian;
 import com.android.akademik_admin.koneksi.config;
 
 public class MainActivity extends AppCompatActivity {
@@ -73,7 +74,13 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()){
 
 
-                    //Replacing the main content with ContentFragment Which is our Inbox View;
+                    case R.id.exam:
+                        ujian fragment_ujian = new ujian();
+                        android.support.v4.app.FragmentTransaction FragmentTransaction_ujian = getSupportFragmentManager().beginTransaction();
+                        FragmentTransaction_ujian.replace(R.id.frame,fragment_ujian);
+                        FragmentTransaction_ujian.commit();
+                        return true;
+
                     case R.id.inbox:
                         matkul fragment = new matkul();
                         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
