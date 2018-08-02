@@ -7,6 +7,7 @@ package com.android.akademik_admin.koneksi;
 public class config {
     public static final String UPDATE_PENGAJAR = "http://mydeveloper.id/akademik/admin/update_matkul.php";
     public static final String LOGIN = "http://mydeveloper.id/akademik/login.php";
+    public static final String JADWAL = "http://mydeveloper.id/akademik/admin/jadwal_per_semester.php?semester=";
     public static final String JADWAL_KULIAH = "http://mydeveloper.id/akademik/admin/jadwal_kuliah_all.php";
     public static final String KULIAH_SEMESTER = "http://mydeveloper.id/akademik/jadwal_kuliah_semester.php?semesternya=";
     public static final String DETAIL_JADWAL = "http://mydeveloper.id/akademik/admin/detail_jadwal_kuliah.php?id_matkul=";
